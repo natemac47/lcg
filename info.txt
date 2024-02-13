@@ -1,0 +1,20 @@
+x_lecg_sproutabout_child_contact
+guardian_id
+u_contact_id_string
+family_id
+
+sys_user
+u_guardian_id
+u_sa_contact_id
+u_family_id
+
+u_sproutabout_contact
+u_marked_for_deletion
+
+no filter = 2,845,579
+contact id NOT EMPTY = 2,624,045
+name NOT EMPTY && contact id NOT EMPTY = 2,623,437
+
+SQL:
+Load: 3 seconds
+Group By Department: 721
