@@ -1,7 +1,4 @@
 //COPIES FIELDS FROM SYS USER TO SPROUTABOUT M2M RECORDS.
-// Initialize an array to store the sys_ids of updated records for logging
-var updatedSysIds = [];
-
 // Query the x_lecg_sproutabout_child_contact table for records where child_id is not empty
 var childContactGr = new GlideRecord('x_lecg_sproutabout_child_contact');
 childContactGr.addNotNullQuery('child_id'); // Add condition for child_id to not be null
@@ -21,9 +18,9 @@ while (childContactGr.next()) {
             childContactGr.setValue('family_id', userGr.getValue('u_family_id'));
             childContactGr.setValue('name', userGr.getValue('name'));
 
-            // Update the record and add the sys_id to the array of updated records
+            // Update the record
             childContactGr.update();
-            updatedSysIds.push(childContactGr.getUniqueValue());
         }
     }
 }
+
