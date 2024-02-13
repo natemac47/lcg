@@ -1,3 +1,4 @@
+//COPIES FIELDS FROM SYS USER TO SPROUTABOUT M2M RECORDS.
 // Initialize an array to store the sys_ids of updated records for logging
 var updatedSysIds = [];
 
