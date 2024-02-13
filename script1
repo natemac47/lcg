@@ -2,7 +2,7 @@
 var tableName = 'sys_user'; // Replace 'example_table' with your actual table name
 
 // Create a GlideRecord instance for the specified table
-var gr = new GlideRecord(sys_user);
+var gr = new GlideRecord(tableName);
 
 // Add a query to find records where u_sa_contact_id is not null or not empty
 gr.addQuery('u_sa_contact_id', '!=', '');
