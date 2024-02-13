@@ -1,3 +1,4 @@
+//SETS USER RECORDS ON SYS_USER WHERE CONTACT_ID IS FILLED IN TO SPROUTABOUT CONTACT = TRUE. TAKES APPROX. 8-10 HRS
 // Define the table you want to update
 var tableName = 'sys_user'; // Replace 'example_table' with your actual table name
 
