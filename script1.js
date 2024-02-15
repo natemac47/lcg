@@ -18,7 +18,8 @@ var count = 0;
 while (gr.next()) {
     // Set u_sproutabout_contact to true
     gr.u_sproutabout_contact = true;
-    
+    gr.u_marked_for_deletion = true;
+
     // Update the record
     gr.update();
     
