@@ -4,9 +4,7 @@ var supportGr = new GlideRecord('x_lecg_sproutabout_support');
 // Query for records where caller_id's u_sproutabout_contact is true
 supportGr.addQuery('caller_id.u_sproutabout_contact', true);
 
-// Limit the number of records to process to 10
-supportGr.setLimit(10);
-
+// Remove the setLimit line to process all matching records
 supportGr.query();
 
 while (supportGr.next()) {
