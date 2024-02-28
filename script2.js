@@ -17,6 +17,9 @@ while (childContactGr.next()) {
             childContactGr.setValue('u_contact_id_string', userGr.getValue('u_sa_contact_id'));
             childContactGr.setValue('family_id', userGr.getValue('u_family_id'));
             childContactGr.setValue('name', userGr.getValue('name'));
+            childContactGr.setValue('mobile_phone', userGr.getValue('mobile_phone'));
+            childContactGr.setValue('email', userGr.getValue('email'));
+
 
             // Update the record
             childContactGr.update();
