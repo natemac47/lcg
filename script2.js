@@ -1,7 +1,7 @@
 //COPIES FIELDS FROM SYS USER TO SPROUTABOUT M2M RECORDS.
 // Query the x_lecg_sproutabout_child_contact table for records where child_id is not empty
 var childContactGr = new GlideRecord('x_lecg_sproutabout_child_contact');
-childContactGr.addNotNullQuery('child_id'); // Add condition for child_id to not be null
+//childContactGr.addNotNullQuery('child_id'); // Add condition for child_id to not be null
 childContactGr.query(); // Execute the query
 
 while (childContactGr.next()) {
