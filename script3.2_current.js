@@ -1,3 +1,4 @@
+//Associate Child Contact record to Contact records using contact ID
 var childContactGr = new GlideRecord('x_lecg_sproutabout_child_contact');
 childContactGr.query();
 while (childContactGr.next()) {
