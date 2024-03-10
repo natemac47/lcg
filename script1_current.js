@@ -1,4 +1,4 @@
-//SETS USER RECORDS ON SYS_USER WHERE CONTACT_ID IS FILLED IN TO SPROUTABOUT CONTACT = TRUE. TAKES APPROX. 8-10 HRS
+//Look for SproutAbout users on sys_user and set migration attributes
 var tableName = 'sys_user'; 
 var gr = new GlideRecord(tableName);
 gr.addQuery('u_sa_contact_id', '!=', '');
