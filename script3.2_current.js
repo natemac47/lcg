@@ -8,7 +8,6 @@ while (childContactGr.next()) {
         contactGr.setLimit(1);
         contactGr.query();
         if (contactGr.next()) {
-            childContactGr.sproutbout_user = true;
             childContactGr.contact_id_new = contactGr.sys_id;
             childContactGr.update();
         }
