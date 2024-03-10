@@ -16,7 +16,6 @@ while (childRecord.next()) {
     newContact.contact_id_string = contactRef.getValue('u_sa_contact_id');
     newContact.contact_id = childRecord.sys_id;
     
-    // Insert the new contact and retrieve its sys_id
     var newContactSysId = newContact.insert();
     
     if (newContactSysId) {
