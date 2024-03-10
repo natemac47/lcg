@@ -1,3 +1,4 @@
+//Create SproutAbout Contact Records and associate Contact record to Child Contact records
 var childRecord = new GlideRecord('x_lecg_sproutabout_child_contact');
 childRecord.query();
 while (childRecord.next()) {
