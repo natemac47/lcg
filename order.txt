@@ -1,0 +1,13 @@
+1. Prime sys_user records for migration
+1a. Set SproutAbout User = True & Marked for Deletion to True where Contact ID is not Empty
+
+2. Create SproutAbout Contact records 
+2a. Using SproutAbout Child Contact m2m table, dotwalk to records where contact record to
+sys_user.sproutabout_user = true and get create record using those attributes. 
+
+3. Associate SproutAbout Child Contact records
+3a. SproutAbout Child and SproutAbout Child Contact have same contact_id
+
+4. If caller is SproutAbout Contact set SproutAbout Contact to true and set reference field
+4a. Look up caller contact ID and if it exists in Contact table then set boolean to true and 
+associate via new reference field.
